@@ -1,10 +1,10 @@
 <template>
   <h1>Computed 計算屬性</h1>
-  <input type="number" v-model="num">
+  computed寫法1: <input type="number" v-model="num">
   <h3>{{ numFormat }}</h3>
 
-  <input type="text" v-model="fullName"><br/>
-  {{firstName}}<br/><br/>{{lastName}}
+  computed寫法2: <input type="text" v-model="fullName"><br/><br/>
+  firstName:{{firstName}} <br/> lastName:{{lastName}}
 </template>
 <script setup>
 import { computed,ref } from "vue";
